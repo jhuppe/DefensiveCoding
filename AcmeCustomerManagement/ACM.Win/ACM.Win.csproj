@@ -104,6 +104,12 @@
     <Compile Include="OrderWin.Designer.cs">
       <DependentUpon>OrderWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="PedometerWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedometerWin.Designer.cs">
+      <DependentUpon>PedometerWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="OrderWin.resx">

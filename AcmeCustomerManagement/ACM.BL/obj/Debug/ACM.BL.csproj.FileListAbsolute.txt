@@ -1,0 +1,8 @@
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\bin\Debug\ACM.BL.xml
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\bin\Debug\ACM.BL.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\bin\Debug\ACM.BL.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\bin\Debug\ACM.Library.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\bin\Debug\ACM.Library.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\obj\Debug\ACM.BL.csprojResolveAssemblyReference.cache
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\obj\Debug\ACM.BL.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BL\obj\Debug\ACM.BL.pdb

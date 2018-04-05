@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ACM.BL</name>
+    </assembly>
+    <members>
+        <member name="T:ACM.BL.Customer">
+            <summary>
+            Manages a single customer.
+            </summary>
+        </member>
+        <member name="T:ACM.BL.InventoryRepository">
+            <summary>
+            Manages the data access for inventory.
+            </summary>
+        </member>
+        <member name="T:ACM.BL.Order">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ACM.BL.OrderRepository">
+            <summary>
+            Repository for orders
+            </summary>
+        </member>
+        <member name="T:ACM.BL.Payment">
+            <summary>
+            Manages a payment.
+            </summary>
+        </member>
+    </members>
+</doc>

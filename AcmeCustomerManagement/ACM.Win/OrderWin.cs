@@ -7,6 +7,7 @@ namespace ACM.Win
     public partial class OrderWin : Form
     {
 
+        //private readonly Customer _customer; 
         public OrderWin()
         {
             InitializeComponent();
@@ -25,14 +26,17 @@ namespace ACM.Win
             var order = new Order();
             // Populate the order instance
 
+            var allowSplitOrders = true;
+            var emailReceipt = true;
+
             var payment = new Payment();
-            // Populate the payment info from the UI
 
             var orderController = new OrderController();
-            orderController.PlaceOrder(customer, order, payment, 
-                allowSplitOrders:false, 
-                emailReceipt:true);
+            orderController.PlaceOrder(customer, order, payment,
+                allowSplitOrders: false,
+                emailReceipt: true);
         }
 
+        
     }
 }

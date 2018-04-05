@@ -1,0 +1,11 @@
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.BLTests.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.BLTests.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.BL.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.Library.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.BL.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.BL.xml
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\bin\Debug\ACM.Library.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\obj\Debug\ACM.BLTests.csprojResolveAssemblyReference.cache
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\obj\Debug\ACM.BLTests.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\ACM.BLTests\obj\Debug\ACM.BLTests.pdb

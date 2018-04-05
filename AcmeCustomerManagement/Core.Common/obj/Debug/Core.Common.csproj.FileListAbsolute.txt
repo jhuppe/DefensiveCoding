@@ -1,0 +1,5 @@
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\Core.Common\bin\Debug\ACM.Library.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\Core.Common\bin\Debug\ACM.Library.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\Core.Common\obj\Debug\Core.Common.csprojResolveAssemblyReference.cache
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\Core.Common\obj\Debug\ACM.Library.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\DefensiveCoding\AcmeCustomerManagement\Core.Common\obj\Debug\ACM.Library.pdb

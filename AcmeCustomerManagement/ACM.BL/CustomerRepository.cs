@@ -10,6 +10,7 @@ namespace ACM.BL
     {
         public void Add(Customer customer)
         {
+
             // -- If this is a new customer, create the customer record --
             // Determine whether the customer is an existing customer.
             // If not, validate entered customer information
