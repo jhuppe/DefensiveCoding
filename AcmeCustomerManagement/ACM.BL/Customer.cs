@@ -25,13 +25,16 @@ namespace ACM.BL
         {
             decimal result = 0;
 
-            decimal goalStepCount = 0;
-            decimal actualStepCount = 0;
+            
+            
 
             if (string.IsNullOrWhiteSpace(goalSteps)) throw new ArgumentException("Goal must be entered", "goalSteps");
             if (string.IsNullOrWhiteSpace(actualSteps)) throw new ArgumentException("Actual steps count must be entered", "actualSteps");
 
+            decimal goalStepCount = 0;
             if (!decimal.TryParse(goalSteps, out goalStepCount)) throw new ArgumentException("Goal must be numeric");
+
+            decimal actualStepCount = 0;
             if (!decimal.TryParse(actualSteps, out actualStepCount)) throw new ArgumentException("Actual steps must be numeric", "actualSteps");
 
             return CalculatePercentofGoalSteps(goalStepCount, actualStepCount);
@@ -57,7 +60,7 @@ namespace ACM.BL
             {
                 var isValidFormat = true;
                 //Code here that validates format of email using Regex
-                if (!isValidFormat) ;
+                if (!isValidFormat) 
                 {
                     op.Success = false;
                     op.AddMessage("Email address is not in a correct format");

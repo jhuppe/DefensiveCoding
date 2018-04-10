@@ -141,6 +141,10 @@
       <Project>{bf30ef21-8b33-417f-ac0f-e8bac9360d8f}</Project>
       <Name>ACM.BL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Core.Common\Core.Common.csproj">
+      <Project>{6A90ABC2-B154-431B-A093-B648582BF5F8}</Project>
+      <Name>Core.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

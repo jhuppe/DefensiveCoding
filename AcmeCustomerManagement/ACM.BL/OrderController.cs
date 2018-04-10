@@ -1,4 +1,5 @@
-﻿using Core.Common;
+﻿using ACM.Library;
+using Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,30 +23,41 @@ namespace ACM.BL
             emailLibrary = new EmailLibrary();
         }
 
-        public void PlaceOrder(Customer customer, 
+        public OperationResult PlaceOrder(Customer customer, 
                                 Order order, 
                                 Payment payment, 
                                 bool allowSplitOrders, bool emailReceipt)
         {
+            if (customer == null) throw new ArgumentNullException("Customer instance is null");
+            if (order == null) throw new ArgumentNullException("Order instance is null");
+            if (payment == null) throw new ArgumentNullException("Payment instance is null");
+
+            var op = new OperationResult();
+
             customerRepository.Add(customer);
-
             orderRepository.Add(order);
-
             inventoryRepository.OrderItems(order, allowSplitOrders);
-
-            payment.ProcessPayment(payment);
+            payment.ProcessPayment();
 
             if (emailReceipt)
             {
                 var result = customer.ValidateEmail();
                 if (result.Success)
                 {
-                    customerRepository.Update();
-
                     emailLibrary.SendEmail(customer.EmailAddress,
                                             "Here is your receipt");
                 }
+                else
+                {
+                    // log the messages
+                    if (result.MessageList.Any())
+                    {
+                        op.AddMessage(result.MessageList[0]);
+                    }
+
+                }
             }
+            return op;
         }
     }
 }
