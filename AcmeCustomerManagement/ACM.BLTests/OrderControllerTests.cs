@@ -22,9 +22,39 @@ namespace ACM.BL.Tests
 
             OperationResult op = orderController.PlaceOrder(customer, order, payment,
                                                  allowSplitOrders: true, emailReceipt: true);
-
+            
             Assert.AreEqual(true, op.Success);
             Assert.AreEqual(0, op.MessageList.Count);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void PlaceOrderTestNullCustomer()
+        {
+            var orderController = new OrderController();
+            Customer customer = null;
+            var order = new Order();
+            var payment = new Payment() { PaymentType = 1 };
+
+            OperationResult op = orderController.PlaceOrder(customer, order, payment,
+                allowSplitOrders: true, emailReceipt: true);
+        }
+
+        [TestMethod]
+        public void PlaceOrderTestInvalidEmail()
+        {
+            var orderController = new OrderController();
+            Customer customer = new Customer() { EmailAddress = "" };
+            var order = new Order();
+            var payment = new Payment() { PaymentType = 1 };
+
+            OperationResult op = orderController.PlaceOrder(customer, order, payment,
+                allowSplitOrders: true, emailReceipt: true);
+
+            Assert.AreEqual(true, op.Success);
+            Assert.AreEqual(1, op.MessageList.Count);
+            Assert.AreEqual("Email address is null", op.MessageList[0]);
+        }
+
     }
 }

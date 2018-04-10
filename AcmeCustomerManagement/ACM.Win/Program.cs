@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace ACM.Win
@@ -13,9 +14,27 @@ namespace ACM.Win
         [STAThread]
         static void Main()
         {
+            //For UI thread exceptions
+            Application.ThreadException +=
+                new ThreadExceptionEventHandler(GlobalExceptionHandler);
+
+            //Force all Windows Forms errors to go through the handler. 
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+
+            //For non-UI thread exceptions
+            AppDomain.CurrentDomain.UnhandledException +=
+                new UnhandledExceptionEventHandler(GlobalExceptionHandler);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PedometerWin());
+        }
+
+         static void GlobalExceptionHandler(object sender, EventArgs args)
+        {
+            //Log the issue
+            MessageBox.Show("There was a problem with this application. Please contact support.");
+            System.Windows.Forms.Application.Exit();
         }
     }
 }
